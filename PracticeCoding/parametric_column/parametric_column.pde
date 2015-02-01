@@ -8,7 +8,6 @@ int diameterHigh = 30;
 int rate = 8;
 
 void setup(){
- 
  ellipseMode(CENTER);
  size(800, 800);
  smooth(); 
@@ -30,23 +29,26 @@ void draw_column(int x, int y, int bH, int sH, int cH, int dL, int dH){
   
   // construction points 
   
-  //ellipse(x, y, 15, 15);  // center point
+  //ellipse(x, y, 15, 15);  // center point marker
+  /*
   line(x, y, x+5, y+5);
   line(x, y, x-5, y+5);
   line(x, y, x-5, y-5);
   line(x, y, x+5, y-5);
-  
-  // capitel
+ 
+  // capital - draws circles at the corner points of the capital
   ellipse(x-(dH/2), y-(sH/2), 10, 10);
   ellipse(x+(dH/2), y-(sH/2), 10, 10);
   ellipse(x+(dH/2) + (dH*0.3), 1.0*(y - ((sH/2)+cH)), 10, 10);
   ellipse(x-((dH/2) + (dH*0.3)), y - ((sH/2)+cH), 10, 10);
+  
   
   // base
   ellipse(x-(dL/2)-(dL*0.3), y + (sH/2) +bH, 10, 10);
   ellipse(x+(dL/2)+(dL*0.3), y + (sH/2) + bH, 10, 10);
   ellipse(x + (dL/2), y + (sH/2), 10, 10);
   ellipse(x - (dL/2), y + (sH/2), 10, 10);
+  */
   
   strokeWeight(1);
 
@@ -60,6 +62,7 @@ void draw_column(int x, int y, int bH, int sH, int cH, int dL, int dH){
   quad(x-(dL/2)-(dL*0.3), y + (sH/2) +bH, x+(dL/2)+(dL*0.3), y + (sH/2) + bH, x + (dL/2), y + (sH/2), x - (dL/2), y + (sH/2));
   
 }
+
 
 void keyPressed(){
  
