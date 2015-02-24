@@ -52,12 +52,12 @@ void setup()
 	kinect.enableDepth();
 
 	//start the image out moving so mouse press will drop it
-	//imageMoving = true;
+	imageMoving = true;
 
 	//load the image from a file
 	image1 = loadImage("image1.jpg");
-        image2 = loadImage("image2.jpg");
-        image3 = loadImage("image3.jpg");
+    image2 = loadImage("image2.jpg");
+    image3 = loadImage("image3.jpg");
 }
 
 void draw()
