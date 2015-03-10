@@ -6,17 +6,20 @@ Table table;
 int i;
 //String IMAGEFOLDERPATH = "\Users\vernelle_noel\Documents\GitHub\Algorithmic_Tectonics\Assignment 2.2\Mas_designers_data_imgs\data\int_images";
 //String IMAGES[] = listFileNames(IMAGEFOLDERPATH);
-PImage img1;
+PImage webImg;
+PImage webImg2;
 
 void setup() {
-  size(1600, 400);
+  size(1600, 900);
   table = loadTable("mas_designers_data2.csv", "header");
-  img1 = loadImage("01.jpg");
-  
+  String url = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs/data/int_images/01.jpg";
+  webImg = loadImage(url, "jpg"); 
+  String url2 = "http://caribbeanarchitecture.vernellenoel.com/ca-images/caribbean/ca-600px/vernelle_noel_caribbean-architecture-CA1004.jpg";
+  webImg2 = loadImage(url2, "jpg");
 }
   
   void draw() {
-    //image(img1, 0, 0);
+    
   //println(table.getRowCount() + " total rows in table"); 
 
   i = 0;
@@ -27,11 +30,12 @@ void setup() {
     String name = row.getString("Name of Designer");
     int experience = row.getInt("Experience in design in Carnival (yrs)");
     float time = row.getFloat("Duration of interview (hrs)");
+    //PImage webImg[i] = loadImage(
 
     //println("Interview Number: " + number + "|| Name of Designer: " + name + "|| Years of Experience in Mas: " + experience + "|| Duration of interview: " + time);
 
     float xpos = 20+(width / table.getRowCount())*i;
-    float ypos = height/2;
+    float ypos = 700;
 
     float m1 = map(experience, 2, 21, 0, 100);
     float m2 = map(experience, 22, 45, 101, 200);
@@ -54,10 +58,14 @@ void setup() {
       text(time, xpos, (ypos+20)-(2*experience));
       
       textSize(30);
-      text("DESIGNER & YEARS OF EXPERIENCE IN DESIGN IN MAS", 20, 30); 
-      
-      
+      text("DESIGNER & YEARS OF EXPERIENCE IN DESIGN IN MAS", (width/2)-50, 30); 
     }
+      if (mouseX <= width * 1/14) {
+        image(webImg, 5, 5);
+      } else {
+        image(webImg2, 5,5);
+      }
+    
 
     // for each ellipse, fill according to the number in column header "color"
 
