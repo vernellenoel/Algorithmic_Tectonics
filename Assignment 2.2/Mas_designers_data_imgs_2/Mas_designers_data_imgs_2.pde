@@ -23,6 +23,7 @@ PImage webImg14;
 PImage webImg15;
 
 
+
 void setup() {
   size(1600, 900);
   table = loadTable("mas_designers_data2.csv", "header");
@@ -70,6 +71,8 @@ void setup() {
   
   String url15 = "http://caribbeanarchitecture.vernellenoel.com/ca-images/caribbean/ca-600px/vernelle_noel_caribbean-architecture-CA1004.jpg";
   webImg15 = loadImage(url15, "jpg");
+  
+
 }
   
   void draw() {
@@ -102,8 +105,6 @@ void setup() {
     fill (255);
     ellipse(xpos, ypos, 10*time, 10*time);
 
-    
-
     if (dist(xpos, ypos, mouseX, mouseY) < experience)
     {
       fill(0);
@@ -114,33 +115,40 @@ void setup() {
       textSize(30);
       text("DESIGNER & YEARS OF EXPERIENCE IN DESIGN IN MAS", (width/2)-50, 30); 
     }
-      if (mouseX <= width * 1/14) {
+    
+    
+      if (mouseX <= width * 1/15) {
         image(webImg1, 5, 5);
-      } else if (mouseX <= width * 2/14) {
+//      }
+//        else {
+//        image(webImg15, 5,5);
+//      }
+//      
+      } else if (mouseX <= width * 2/15) {
         image(webImg2, 5, 5);
-      } else if (mouseX <= width * 3/14) {
+      } else if (mouseX <= width * 3/15) {
         image(webImg3, 5, 5);
-      } else if (mouseX <= width * 4/14) {
+      } else if (mouseX <= width * 4/15) {
         image(webImg4, 5, 5);
-      } else if (mouseX <= width * 5/14) {
+      } else if (mouseX <= width * 5/15) {
         image(webImg5, 5, 5);
-      } else if (mouseX <= width * 6/14) {
+      } else if (mouseX <= width * 6/15) {
         image(webImg6, 5, 5);
-      } else if (mouseX <= width * 7/14) {
+      } else if (mouseX <= width * 7/15) {
         image(webImg7, 5, 5);
-      } else if (mouseX <= width * 8/14) {
+      } else if (mouseX <= width * 8/15) {
         image(webImg8, 5, 5);
-      } else if (mouseX <= width * 9/14) {
+      } else if (mouseX <= width * 9/15) {
         image(webImg9, 5, 5);
-      } else if (mouseX <= width * 10/14) {
+      } else if (mouseX <= width * 10/15) {
         image(webImg10, 5, 5);
-      } else if (mouseX <= width * 11/14) {
+      } else if (mouseX <= width * 11/15) {
         image(webImg11, 5, 5);
-      } else if (mouseX <= width * 12/14) {
+      } else if (mouseX <= width * 12/15) {
         image(webImg12, 5, 5);
-      } else if (mouseX <= width * 13/14) {
+      } else if (mouseX <= width * 13/15) {
         image(webImg13, 5, 5);
-      } else if (mouseX <= width * 14/14) {
+      } else if (mouseX <= width * 14/15) {
         image(webImg14, 5, 5);
       } 
       else {
@@ -174,6 +182,10 @@ void keyPressed(){
     if (key=='6') {
       save("mas_designers_data_imgs_6.jpg");
     }
+    // restarts the simulation
+    if (key == ' '){
+      redraw();
+  }
 }
 
 
