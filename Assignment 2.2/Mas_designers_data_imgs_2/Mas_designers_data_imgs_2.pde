@@ -27,49 +27,49 @@ PImage webImg15;
 void setup() {
   size(1600, 900);
   table = loadTable("mas_designers_data2.csv", "header");
-  String url = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs/data/int_images/01.jpg";
+  String url = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/01.jpg";
   webImg1 = loadImage(url, "jpg"); 
   
-    String url2 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs/data/int_images/02.jpg";
+    String url2 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/02.jpg";
   webImg2 = loadImage(url2, "jpg");
   
-    String url3 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs/data/int_images/03.jpg";
+    String url3 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/03.jpg";
   webImg3 = loadImage(url3, "jpg");
   
-    String url4 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs/data/int_images/04.jpg";
+    String url4 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/04.jpg";
   webImg4 = loadImage(url4, "jpg");
   
-    String url5 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs/data/int_images/05.jpg";
+    String url5 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/05.jpg";
   webImg5 = loadImage(url5, "jpg");
   
-    String url6 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs/data/int_images/06.jpg";
+    String url6 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/06.jpg";
   webImg6 = loadImage(url6, "jpg");
   
-    String url7 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs/data/int_images/07.jpg";
+    String url7 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/07.jpg";
   webImg7 = loadImage(url7, "jpg");
   
-    String url8 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs/data/int_images/08.jpg";
+    String url8 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/08.jpg";
   webImg8 = loadImage(url8, "jpg");
   
-    String url9 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs/data/int_images/09.jpg";
+    String url9 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/09.jpg";
   webImg9 = loadImage(url9, "jpg");
   
-    String url10 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs/data/int_images/10.jpg";
+    String url10 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/10.jpg";
   webImg10 = loadImage(url10, "jpg");
   
-    String url11 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs/data/int_images/11.jpg";
+    String url11 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/11.jpg";
   webImg11 = loadImage(url11, "jpg");
   
-    String url12 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs/data/int_images/12.jpg";
+    String url12 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/12.jpg";
   webImg12 = loadImage(url12, "jpg");
   
-    String url13 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs/data/int_images/13.jpg";
+    String url13 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/13.jpg";
   webImg13 = loadImage(url13, "jpg");
   
-    String url14 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs/data/int_images/14.jpg";
+    String url14 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/14.jpg";
   webImg14 = loadImage(url14, "jpg");
   
-  String url15 = "http://caribbeanarchitecture.vernellenoel.com/ca-images/caribbean/ca-600px/vernelle_noel_caribbean-architecture-CA1004.jpg";
+  String url15 = "https://raw.github.com/vernellenoel/Algorithmic_Tectonics/blob/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/15.jpg";
   webImg15 = loadImage(url15, "jpg");
   
 
@@ -116,7 +116,6 @@ void setup() {
       text("DESIGNER & YEARS OF EXPERIENCE IN DESIGN IN MAS", (width/2)-50, 30); 
     }
     
-    
       if (mouseX <= width * 1/15) {
         image(webImg1, 5, 5);
 //      }
@@ -152,7 +151,7 @@ void setup() {
         image(webImg14, 5, 5);
       } 
       else {
-        image(webImg15, 5,5);
+        image(webImg15, 5, 5);
       }
     
 
