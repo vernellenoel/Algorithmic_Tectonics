@@ -23,10 +23,13 @@ PImage webImg14;
 PImage webImg15;
 
 
-
 void setup() {
-  size(1600, 900);
+  size(1600, 800);
   table = loadTable("mas_designers_data2.csv", "header");
+  
+  textSize(30);
+  text("DESIGNER & YEARS OF EXPERIENCE IN DESIGN IN MAS", 710, 30);
+  
   String url = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/01.jpg";
   webImg1 = loadImage(url, "jpg"); 
   
@@ -69,14 +72,16 @@ void setup() {
     String url14 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/14.jpg";
   webImg14 = loadImage(url14, "jpg");
   
-  String url15 = "https://raw.github.com/vernellenoel/Algorithmic_Tectonics/blob/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/15.jpg";
+  String url15 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/15.jpg";
   webImg15 = loadImage(url15, "jpg");
-  
-
+ 
 }
   
   void draw() {
-    
+
+    background(175);
+    textSize(30);
+    text("DESIGNER & YEARS OF EXPERIENCE IN DESIGN IN MAS", (width/2)-40, 30);
   //println(table.getRowCount() + " total rows in table"); 
 
   i = 0;
@@ -92,7 +97,7 @@ void setup() {
     //println("Interview Number: " + number + "|| Name of Designer: " + name + "|| Years of Experience in Mas: " + experience + "|| Duration of interview: " + time);
 
     float xpos = 20+(width / table.getRowCount())*i;
-    float ypos = 700;
+    float ypos = 650;
 
     float m1 = map(experience, 2, 21, 0, 100);
     float m2 = map(experience, 22, 45, 101, 200);
@@ -112,11 +117,13 @@ void setup() {
       text(name, xpos, (ypos)-(2*experience));
       text(time, xpos, (ypos+20)-(2*experience));
       
-      textSize(30);
-      text("DESIGNER & YEARS OF EXPERIENCE IN DESIGN IN MAS", (width/2)-50, 30); 
+      fill (243,15,15);
+      ellipse(xpos, ypos, 10*time, 10*time);
     }
     
-      if (mouseX <= width * 1/15) {
+      if (mouseX < 20) {
+        image(webImg15, 5, 5);
+      } else if (mouseX <= width * 1/15) {
         image(webImg1, 5, 5);
 //      }
 //        else {
@@ -153,10 +160,6 @@ void setup() {
       else {
         image(webImg15, 5, 5);
       }
-    
-
-    // for each ellipse, fill according to the number in column header "color"
-
     i ++;
   }
   //
@@ -182,9 +185,9 @@ void keyPressed(){
       save("mas_designers_data_imgs_6.jpg");
     }
     // restarts the simulation
-    if (key == ' '){
-      redraw();
-  }
+//    if (key == ' '){
+//      redraw();
+//  }
 }
 
 
