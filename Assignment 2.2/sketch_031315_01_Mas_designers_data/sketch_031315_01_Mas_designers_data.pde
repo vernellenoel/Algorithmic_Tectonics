@@ -10,7 +10,7 @@ PImage webImg10, webImg11, webImg12, webImg13, webImg14, webImg15;
 PImage tang, fred, meil, bail, dere, george, miller, morr, minsh, hack, clary;
 int img_xlocation = 30;
 int img_ylocation = 50;
-int design_xlocation = 720;
+int design_xlocation = 780;
 int design_ylocation = 50;
 
 
@@ -63,45 +63,48 @@ void setup() {
   String url15 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/Mas_designers_data_imgs_2/data/int_images/15.jpg";
   webImg15 = loadImage(url15, "jpg");
  
-   String mas1 = "https://repeatingislands.files.wordpress.com/2013/02/344256-carnival.jpg";
+   String mas1 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/sketch_031315_01_Mas_designers_data/data/int_images/mas1.jpg";
   tang = loadImage(mas1, "jpg");
   
-  String mas2 = "http://www.trinidadcarnivaldiary.com/wp-content/uploads/2013/01/cAG-TU3PThpVq7Yputk5XH2f2KlVnyRsfd2G5p1dueE-1.jpg";
+  String mas2 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/sketch_031315_01_Mas_designers_data/data/int_images/mas2.jpg";
   fred = loadImage(mas2, "jpg");
   
-  String mas3 = "http://static1.squarespace.com/static/52e954e5e4b0608808d04675/52fa791de4b0a07e01b6800e/52fa7b9fe4b03ff7dae2df9e/1392147373900/MEILING+Last+Train+to+San+Fernando+Promo+Photo.jpg?format=750w";
+  String mas3 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/sketch_031315_01_Mas_designers_data/data/int_images/mas3.jpg";
   meil = loadImage(mas3, "jpg");
   
-  String mas4 = "http://www.fashionprojects.org/wp-content/uploads/2011/03/Beauty-and-Pertuity-2010.jpg";
+  String mas4 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/sketch_031315_01_Mas_designers_data/data/int_images/mas4.jpg";
   bail = loadImage(mas4, "jpg");
   
-  String mas5 = "http://lyndersaydigital.com/stock/img/mas/dg05_files/JuniorKing_06-02-05%2002.jpg";
+  String mas5 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/sketch_031315_01_Mas_designers_data/data/int_images/mas5.jpg";
   dere = loadImage(mas5, "jpg");
   
-  String mas6 = "http://pix.avaxnews.com/avaxnews/67/fa/0001fa67_medium.jpeg";
-  george = loadImage(mas6, "png");
+  String mas6 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/sketch_031315_01_Mas_designers_data/data/int_images/mas6.jpg";
+  george = loadImage(mas6, "jpg");
   
-  String mas7 = "http://img.theepochtimes.com/n3/eet-content/uploads/2014/01/caribbean-shutterstock-5335351-WEBONLY.jpg";
+  String mas7 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/sketch_031315_01_Mas_designers_data/data/int_images/mas7.jpg";
   miller = loadImage(mas7, "jpg");
   
-  String mas8 = "https://img0.etsystatic.com/000/0/5261667/il_fullxfull.298972636.jpg";
+  String mas8 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/sketch_031315_01_Mas_designers_data/data/int_images/mas8.jpg";
   morr = loadImage(mas8, "jpg");
   
-  String mas9 = "http://noelnorton.com/pixelpost/images/20080730160127_ncba-40.jpg";
+  String mas9 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/sketch_031315_01_Mas_designers_data/data/int_images/mas9.jpg";
   minsh = loadImage(mas9, "jpg");
   
-  String mas10 = "http://www.themaking.org.uk/images/stories/Artists/MakerOfTheMonth/Clary_Salandy/cs-large5.jpg";
+  String mas10 = "https://raw.githubusercontent.com/vernellenoel/Algorithmic_Tectonics/master/Assignment%202.2/sketch_031315_01_Mas_designers_data/data/int_images/mas10.jpg";
   clary = loadImage(mas10, "jpg");
   
 }
   
   void draw() {
 
-    background(175);
-    fill(0);
+    background(0);
+    fill(255);
     textSize(30);
-    text("FIELD RESEARCH IN MAS", 30, 30);
-  
+    
+    text("FIELD RESEARCH IN MAS", 30, 35);
+    
+    //println(mouseX + " : " + mouseY);
+    
      String[] tangkai = loadStrings("tangkai.txt");
      String[] frederick = loadStrings("frederick.txt");
      String[] meiling = loadStrings("meiling.txt");
@@ -202,7 +205,7 @@ void setup() {
 
     if (dist(xpos, ypos, mouseX, mouseY) < experience)
     {
-      fill(0);
+      fill(255);
       textSize(20);
       text(name, xpos, (ypos)-(2*experience));
       text(time + " hrs", xpos, (ypos+23)-(2*experience));
